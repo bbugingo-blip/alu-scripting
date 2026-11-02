@@ -9,7 +9,7 @@ def top_ten(subreddit):
     been handled, for both valid and invalid subreddits, as the project
     checker expects."""
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {"User-Agent": "linux:alu-scripting:v1.0 (by /u/eruhigira)"}
+    headers = {"User-Agent": "linux:alu-scripting:v1.0 (by /u/bbugingo-blip)"}
     try:
         requests.get(url, headers=headers, params={"limit": 10},
                      allow_redirects=False)
